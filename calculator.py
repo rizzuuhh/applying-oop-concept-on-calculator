@@ -19,11 +19,20 @@ class Calculator:
             return input(message)
        
     # Perform the specified operation on the given numbers
-    # Addition
-
-    # Subtraction
-    # Multiplication
-    # Division
+        def perform_operation(self, operation, num1, num2):
+            if operation == '1':  # Addition
+                return num1 + num2
+            elif operation == '2':  # Subtraction
+                return num1 - num2
+            elif operation == '3':  # Multiplication
+                return num1 * num2
+            elif operation == '4':  # Division
+                if num2 == 0:
+                    return "Error: Division by zero!"
+                else:
+                    return num1 / num2
+            else:
+                return "Error: Invalid operation!"
     # Print the result of the calculation
     # Check if the result is a float (for division)
     # Run the calculator
