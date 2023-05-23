@@ -34,7 +34,11 @@ class Calculator:
             else:
                 return "Error: Invalid operation!"
     # Print the result of the calculation
-    # Check if the result is a float (for division)
+    def print_result(self, result):
+        if isinstance(result, float):  # Check if the result is a float (for division)
+            print("Result: {:.2f}".format(result))
+        else:
+            print("Result:", result)
     # Run the calculator
     # Print the menu options
     # Get the operation from the user
