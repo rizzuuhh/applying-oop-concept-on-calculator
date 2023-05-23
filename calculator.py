@@ -51,7 +51,8 @@ class Calculator:
             num1 = float(self.get_user_input("Enter the first number: "))  # Get the first number from the user
             num2 = float(self.get_user_input("Enter the second number: "))  # Get the second number from the user
     # Perform the operation
-    # Print the result
+        result = self.perform_operation(operation, num1, num2)  
+        self.print_result(result)  # Print the result
     # Get the operation from the user
     # Get the first number from the user
     # Get the second number from the user
