@@ -15,6 +15,8 @@ class Calculator:
         print("4 Division (/)")
     
     # Get user input with the provided message as prompt
+        def get_user_input(self, message):
+            return input(message)
        
     # Perform the specified operation on the given numbers
     # Addition
