@@ -7,7 +7,10 @@ class Calculator:
         print(self.title)
     
     # Print the menu options for the calculator
-    # Get user input with the provided message as prompt
+    def print_menu(self):
+        # Get user input with the provided message as prompt
+        print("\033[1m\033[1;32mChoose an operation:")
+
     # Perform the specified operation on the given numbers
     # Addition
     # Subtraction
