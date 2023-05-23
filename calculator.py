@@ -54,11 +54,8 @@ class Calculator:
         result = self.perform_operation(operation, num1, num2)  
         self.print_result(result)  # Print the result
     # Get the operation from the user
-    # Get the first number from the user
-    # Get the second number from the user
-    # Perform the operation
-    # Print the result
-    # Ask if the user wants to repeat
+        choice = self.get_user_input("Do you want to try again? (y/n): ")  # Ask if the user wants to repeat
+        repeat = (choice.lower() == 'y')
     # Print the thank you message
 # Create an instance of the Calculator class
 # Run the calculator
