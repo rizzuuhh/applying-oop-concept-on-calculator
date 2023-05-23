@@ -40,6 +40,9 @@ class Calculator:
         else:
             print("Result:", result)
     # Run the calculator
+    def run(self):
+        self.print_title() 
+        repeat = True
     # Print the menu options
     # Get the operation from the user
     # Get the first number from the user
