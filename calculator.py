@@ -60,4 +60,5 @@ class Calculator:
     print("THANK YOU")  
 
 # Create an instance of the Calculator class
+calculator = Calculator()
 # Run the calculator
