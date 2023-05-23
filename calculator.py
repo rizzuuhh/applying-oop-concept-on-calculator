@@ -2,8 +2,10 @@
 class Calculator:
     def __init__(self):
         self.title = "SIMPLE APP CALCULATOR"
-
     # Print the title of the calculator 
+    def print_title(self):
+        print(self.title)
+    
     # Print the menu options for the calculator
     # Get user input with the provided message as prompt
     # Perform the specified operation on the given numbers
