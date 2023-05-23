@@ -62,3 +62,4 @@ class Calculator:
 # Create an instance of the Calculator class
 calculator = Calculator()
 # Run the calculator
+calculator.run()
