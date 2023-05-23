@@ -43,7 +43,15 @@ class Calculator:
     def run(self):
         self.print_title() 
         repeat = True
-    # Print the menu options
+
+    
+        while repeat:
+            self.print_menu()  # Print the menu options
+            operation = self.get_user_input("Enter the operation number: ")  # Get the operation from the user
+            num1 = float(self.get_user_input("Enter the first number: "))  # Get the first number from the user
+            num2 = float(self.get_user_input("Enter the second number: "))  # Get the second number from the user
+    # Perform the operation
+    # Print the result
     # Get the operation from the user
     # Get the first number from the user
     # Get the second number from the user
