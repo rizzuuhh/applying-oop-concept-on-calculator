@@ -8,11 +8,17 @@ class Calculator:
     
     # Print the menu options for the calculator
     def print_menu(self):
-        # Get user input with the provided message as prompt
-        print("\033[1m\033[1;32mChoose an operation:")
-
+        print("Choose an operation:")
+        print("1 Addition (+)")
+        print("2 Subtraction (-)")
+        print("3 Multiplication (*)")
+        print("4 Division (/)")
+    
+    # Get user input with the provided message as prompt
+       
     # Perform the specified operation on the given numbers
     # Addition
+
     # Subtraction
     # Multiplication
     # Division
