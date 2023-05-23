@@ -57,5 +57,7 @@ class Calculator:
         choice = self.get_user_input("Do you want to try again? (y/n): ")  # Ask if the user wants to repeat
         repeat = (choice.lower() == 'y')
     # Print the thank you message
+    print("THANK YOU")  
+
 # Create an instance of the Calculator class
 # Run the calculator
