@@ -1,4 +1,8 @@
 # Constructor: Initialize the title 
+class Calculator:
+    def __init__(self):
+        self.title = "SIMPLE APP CALCULATOR"
+
     # Print the title of the calculator 
     # Print the menu options for the calculator
     # Get user input with the provided message as prompt
