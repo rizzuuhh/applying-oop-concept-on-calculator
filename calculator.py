@@ -97,3 +97,8 @@ class Calculator:
 calculator = Calculator()
 # Run the calculator
 calculator.run()
+
+# Create new class AdvancedCalculator that inherits from calculator
+class AdvancedCalculator(Calculator): 
+    def init (self):
+        super().__init__()
