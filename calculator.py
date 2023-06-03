@@ -115,7 +115,6 @@ class AdvancedCalculator(Calculator):
       else:
         return super().perform_operation(operation, num1, num2)
 
-
 # Create an instance of the AdvancedCalculator class
 calculator = AdvancedCalculator()
 # Run the calculator
