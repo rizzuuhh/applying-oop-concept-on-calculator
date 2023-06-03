@@ -93,12 +93,12 @@ class Calculator:
         print("\033[1;33m" + ty)
         self.print_confetti()
 
-# Create an instance of the Calculator class
-calculator = Calculator()
-# Run the calculator
-calculator.run()
-
 # Create new class AdvancedCalculator that inherits from calculator
 class AdvancedCalculator(Calculator): 
     def init (self):
         super().__init__()
+    
+    def print_menu(self):
+        super().print_menu()
+        factorial = pyfiglet.figlet_format("5 Factorial (!)" , font="bulbhead" , width=200)
+        print(factorial)
