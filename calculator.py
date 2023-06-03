@@ -102,3 +102,11 @@ class AdvancedCalculator(Calculator):
         super().print_menu()
         factorial = pyfiglet.figlet_format("5 Factorial (!)" , font="bulbhead" , width=200)
         print(factorial)
+
+    def perform_operation(self, operation, num1, num2):
+        if operation == '5': # Factorial
+            return self.factorial(num1)
+        else:
+            return super().perform_operation(operation, num1, num2)
+        
+        
