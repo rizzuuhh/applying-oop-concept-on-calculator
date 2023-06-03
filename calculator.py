@@ -93,20 +93,30 @@ class Calculator:
         print("\033[1;33m" + ty)
         self.print_confetti()
 
-# Create new class AdvancedCalculator that inherits from calculator
-class AdvancedCalculator(Calculator): 
-    def init (self):
+
+# Create a new class called AdvancedCalculator that inherits from Calculator
+class AdvancedCalculator(Calculator):
+    def __init__(self):
         super().__init__()
-    
+
     def print_menu(self):
         super().print_menu()
-        factorial = pyfiglet.figlet_format("5 Factorial (!)" , font="bulbhead" , width=200)
+        factorial = pyfiglet.figlet_format("5 Factorial (!)", font="bulbhead", width=200)
         print(factorial)
 
     def perform_operation(self, operation, num1, num2):
-        if operation == '5': # Factorial
+      if operation == '5':  # Factorial
+        try:
             return self.factorial(num1)
-        else:
-            return super().perform_operation(operation, num1, num2)
-        
-        
+        except ValueError:
+            return "Error: Invalid input for factorial!"
+        except Exception as e:
+            return "Error: An exception occurred while calculating factorial: " + str(e)
+      else:
+        return super().perform_operation(operation, num1, num2)
+
+
+# Create an instance of the AdvancedCalculator class
+calculator = AdvancedCalculator()
+# Run the calculator
+calculator.run()
